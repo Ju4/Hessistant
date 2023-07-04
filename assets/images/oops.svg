@@ -1,7 +1,7 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="17 30 166 140">
 <defs>
 <style>
-.cls-1,.cls-2,.cls-3,.cls-4,.cls-6,.cls-7{fill:none;}.cls-2,.cls-3,.cls-4{stroke:#F7D3B5;}.cls-2,.cls-3,.cls-7{stroke-linecap:round;}.cls-2,.cls-7{stroke-linejoin:round;}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke-width:0.86px;}.cls-3,.cls-4,.cls-5{stroke-miterlimit:10;}.cls-5,.cls-6,.cls-7{stroke:#F7D3B5;}.cls-6{stroke-linecap:square;stroke-linejoin:bevel;}
+.cls-1,.cls-2,.cls-3,.cls-4,.cls-6,.cls-7{fill:none;}.cls-2,.cls-3,.cls-4{stroke:#004D40;}.cls-2,.cls-3,.cls-7{stroke-linecap:round;}.cls-2,.cls-7{stroke-linejoin:round;}.cls-2,.cls-3,.cls-4,.cls-5,.cls-6,.cls-7{stroke-width:0.86px;}.cls-3,.cls-4,.cls-5{stroke-miterlimit:10;}.cls-5,.cls-6,.cls-7{stroke:#004D40;}.cls-6{stroke-linecap:square;stroke-linejoin:bevel;}
 </style>
 </defs>
 <path class="cls-1" d="M88.6,49.89a43,43,0,0,0,10.19-1.75c4.32-1.25,7.67-2.93,7-4.17s-4.73.13-8.81,1.84c-2.1-2.2-4.58-3.19-6.89-.61a7.49,7.49,0,0,0-1.61,4.55l0,0A.07.07,0,0,0,88.6,49.89Z"/>

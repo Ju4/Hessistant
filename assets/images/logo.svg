@@ -1,7 +1,7 @@
 <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="74 16 64 64">
 <defs>
 <style>
-.cls-1,.cls-2,.cls-3,.cls-4{fill:none;stroke:#F7D3B5;}.cls-1,.cls-2,.cls-4{stroke-linecap:round;}.cls-1{stroke-linejoin:round;}.cls-1,.cls-2,.cls-3{stroke-width:0.86px;}.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;}.cls-4{stroke-width:1.23px;}
+.cls-1,.cls-2,.cls-3,.cls-4{fill:none;stroke:#004D40;}.cls-1,.cls-2,.cls-4{stroke-linecap:round;}.cls-1{stroke-linejoin:round;}.cls-1,.cls-2,.cls-3{stroke-width:0.86px;}.cls-2,.cls-3,.cls-4{stroke-miterlimit:10;}.cls-4{stroke-width:1.23px;}
 </style>
 </defs>
 <path class="cls-4" d="M102.44,34.06a.73.73,0,0,1-.14,1,.73.73,0,0,1-.88-1.16A.73.73,0,0,1,102.44,34.06Z"/>
