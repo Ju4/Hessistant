@@ -1,8 +1,13 @@
 ---
-title: Accueil
+title: Trouve un job !
 ---
 
-# Hello!
+# Trouve un job !
+
+Coming soon...
+
+"Should I just stop trying and give up?  But then, that's exactly what they're waiting for me to do."
+Tupac Shakur
 
 Je ne sais pas trop comment tu as atterri sur ce site...  
 
