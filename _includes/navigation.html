@@ -1,0 +1,11 @@
+<nav>
+  <!-- Illustrations powered by DrawKit -->
+  <a href="/" class="logo" alt="Accueil" aria-label="Accueil">
+    <img src="/assets/images/logo.svg" aria-hidden="true" alt="">
+  </a>
+  <ul>
+    {% for item in site.data.navigation %}
+      <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>{{ item.name }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

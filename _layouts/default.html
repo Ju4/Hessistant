@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% seo %}
+    <link rel="stylesheet" href="/assets/css/media-screen.css" media="screen">
+    <link rel="stylesheet" href="/assets/css/media-print.css" media="print">
+    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+  </head>
+  <body>
+    {% include navigation.html %}
+    <div class="page_content">
+      {{ content }}
+    </div>
+    {% include footer.html %}
+  </body>
+</html>

@@ -1,0 +1,6 @@
+- name: Accueil
+  link: /
+- name: Trouve un job !
+  link: /find.html
+- name: Les jobs
+  link: /jobs.html
