@@ -1,0 +1,20 @@
+- id: job-type
+  text: Question 1
+  placeholder: Placeholder Q1
+  answers:
+    - id: type-1
+      text: Answer 1
+    - id: type-2
+      text: Answer 2
+- id: job-topic
+  text: Question 2
+  placeholder: Placeholder Q2
+  answers:
+    - id: topic-1
+      text: Answer 1
+    - id: topic-2
+      text: Answer 2
+    - id: topic-3
+      text: Answer 3
+    - id: topic-4
+      text: Answer 4
