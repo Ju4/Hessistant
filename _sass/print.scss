@@ -1,7 +1,5 @@
 body {
   font-family: Serif;
-  background-color: #FFFFFF; 
-  color: #000000;
 }
 footer, .page_content {
   margin: 5% 10%;
@@ -11,7 +9,7 @@ nav {
 }
 a:link, a:visited {
   text-decoration: none;
-  color: #000000;
+  color: $base-color;
 }
 a:link:after, a:visited:after {
   content: " (" attr(href) ") ";

@@ -1,19 +1,12 @@
 body {
   font-family: Verdana, Arial, Sans-serif;
-  background-color: #FFF;
-  color: #004D40;
-}
-h1, h2 {
-  font-weight: normal;
-}
-h2 {
-  font-style: italic;
 }
 a {
-  color: #004D40;
+  color: $base-color;
 }
-footer, .page_content {
-  padding: 16px;
+footer {
+  padding: 8px 16px;
+  border-top: 1px solid;
 }
 nav {
   display: flex;
@@ -51,14 +44,6 @@ nav .current {
 .logo {
   padding-top: 8px;
 }
-table {
-  border-collapse: collapse;
-}
-th {
-  font-style: italic;
-  font-weight: normal;
-}
-th, td {
-  padding: 8px;
-  border: 1px solid;
+.page_content {
+  padding: 16px;
 }
