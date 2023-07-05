@@ -1,0 +1,26 @@
+---
+title: Trouve un job !
+---
+
+<h1>Trouve un job !</h1>
+
+<p>Je ne sais pas trop comment tu as atterri sur ce site...</p>
+<p>Pour la suite, il faudra attendre la prochaine mise à jour !</p>
+
+{% for question in site.data.questions %}
+  <h2>{{ question.text }}</h2>
+  <select name="question-{{ question.id }}" required>
+    <option value="" disabled selected>{{ question.placeholder }}</option>
+    {% for answer in question.answers %}
+      <option value="{{ answer.id }}">{{ answer.text }}</option>
+    {% endfor %}
+  </select>
+{% endfor %}
+
+<p>
+  <button onclick="findJobs()">Trouve-moi un job !</button>
+</p>
+
+<p id="foundJobs"></p>
+
+{% include tutorial.js %}
