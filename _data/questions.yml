@@ -1,20 +1,14 @@
 - id: job-type
-  text: Question 1
-  placeholder: Placeholder Q1
+  text: Tu es plutôt team...
   answers:
     - id: type-1
-      text: Answer 1
+      text: Jeux vidéos
     - id: type-2
-      text: Answer 2
-- id: job-topic
-  text: Question 2
-  placeholder: Placeholder Q2
+      text: Sport
+- id: job-interaction
+  text: Dans un groupe, tu es plutôt...
   answers:
-    - id: topic-1
-      text: Answer 1
-    - id: topic-2
-      text: Answer 2
-    - id: topic-3
-      text: Answer 3
-    - id: topic-4
-      text: Answer 4
+    - id: interaction-1
+      text: la personne qu'on entend pas souvent
+    - id: interaction-2
+      text: la personne qui parle tout le temps

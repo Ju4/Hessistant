@@ -7,20 +7,18 @@ title: Trouve un job !
 <p>Je ne sais pas trop comment tu as atterri sur ce site...</p>
 <p>Pour la suite, il faudra attendre la prochaine mise à jour !</p>
 
+<form onsubmit="findJobs(); return false;">
 {% for question in site.data.questions %}
-  <h2>{{ question.text }}</h2>
-  <select name="question-{{ question.id }}" required>
-    <option value="" disabled selected>{{ question.placeholder }}</option>
-    {% for answer in question.answers %}
-      <option value="{{ answer.id }}">{{ answer.text }}</option>
-    {% endfor %}
+  <label for="question-{{ question.id }}">{{ question.text }}</label><br>
+  {% for answer in question.answers %}
+    <input type="radio" id="{{ answer.id }}" name="question-{{ question.id }}" value="{{ answer.id }}" required>
+    <label for="{{ answer.id }}">{{ answer.text }}</label><br>
+  {% endfor %}
   </select>
 {% endfor %}
+<input type="submit" value="Trouve-moi un job !">
+</form>
 
-<p>
-  <button onclick="findJobs()">Trouve-moi un job !</button>
-</p>
-
-<p id="foundJobs"></p>
+<div id="foundJobs"></div>
 
 {% include tutorial.js %}
