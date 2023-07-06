@@ -12,9 +12,13 @@ collections:
 defaults:
   - scope:
       path: ""
+      type: "jobs"
+    values:
+      layout: "job"
+  - scope:
+      path: ""
     values:
       layout: "default"
-    
 plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
