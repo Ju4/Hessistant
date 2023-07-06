@@ -33,16 +33,16 @@
       	containsLabels = selectedAnswers[question] !== "" && containsLabels && jobLabels.includes(selectedAnswers[question]);
       }
       if (containsLabels) {
-        foundJobs.push(["{{ job.title }}", "{{ job.url }}"]);
+        foundJobs.push(["{{ job.title }}", "{{ job.url }}", "{{ job.one-liner }}"]);
       }
     {% endfor %}
 
 	if (foundJobs.length) {
-	  var updatedContent = "<p>Voici quelques suggestions de jobs qui pourraient te plaire :</p><ul>";
+	  var updatedContent = `<p>Voici quelques suggestions de jobs qui pourraient te plaire :</p><div class="job_list">`;
 	  for (var item of foundJobs) {
-	    updatedContent += `<li><a href="${item[1]}" alt="${item[0]}">${item[0]}</a></li>`
+	    updatedContent += `<a class="box job_item" href="${item[1]}" alt="${item[0]}"><div class="box_label job_label"">${item[0]}</div><div class="box_content job_description"">${item[2]}</div></a>`
 	  }
-	  updatedContent += "</ul>"
+	  updatedContent += "</div>"
 	  document.getElementById("foundJobs").innerHTML = updatedContent;
 	} else {
       document.getElementById("foundJobs").innerHTML = "<p>Je n'ai rien trouvé pour le moment... sorry!</p>";

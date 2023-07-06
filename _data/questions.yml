@@ -6,7 +6,7 @@
     - id: type-2
       text: Sport
 - id: job-interaction
-  text: Dans un groupe, tu es plutôt...
+  text: Dans un groupe, tu es...
   answers:
     - id: interaction-1
       text: la personne qu'on entend pas souvent

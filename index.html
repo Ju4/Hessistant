@@ -5,17 +5,17 @@ illustration: /assets/images/guide.svg
 
 <h1>Trouve un job !</h1>
 
-<p>Je ne sais pas trop comment tu as atterri sur ce site...</p>
-<p>Pour la suite, il faudra attendre la prochaine mise à jour !</p>
-
 <form>
 {% for question in site.data.questions %}
-  <label for="question-{{ question.id }}">{{ question.text }}</label><br>
-  {% for answer in question.answers %}
-    <input type="radio" id="{{ answer.id }}" name="{{ question.id }}" value="{{ answer.id }}" required>
-    <label for="{{ answer.id }}">{{ answer.text }}</label><br>
-  {% endfor %}
-  </select>
+  <div class="box">
+  <label class="box_label" for="question-{{ question.id }}">{{ question.text }}</label>
+  <div class="box_content">
+    {% for answer in question.answers %}
+      <input type="radio" id="{{ answer.id }}" name="{{ question.id }}" value="{{ answer.id }}" required>
+      <label for="{{ answer.id }}">{{ answer.text }}</label><br>
+    {% endfor %}
+    </div>
+  </div>
 {% endfor %}
 <input type="submit" value="Trouve-moi un job !">
 </form>
