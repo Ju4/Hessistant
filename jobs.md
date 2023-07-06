@@ -1,5 +1,6 @@
 ---
 title: Les jobs
+illustration: /assets/images/find.svg
 ---
 
 # Les jobs

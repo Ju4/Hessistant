@@ -44,6 +44,29 @@ nav .current {
 .logo {
   padding-top: 8px;
 }
-.page_content {
+.page_container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  row-gap: 8px;
+}
+.page_content, .illustration {
   padding: 16px;
+}
+.page_content {
+  flex: 70%;
+}
+.illustration {
+  flex: 30%;
+  max-width: 320px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (max-width: 640px) {
+  .page_container {
+    flex-direction: column;
+  }
+  .page_content, .illustration {
+    flex: auto;
+  }
 }

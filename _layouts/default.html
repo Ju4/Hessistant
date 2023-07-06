@@ -10,8 +10,15 @@
   </head>
   <body>
     {% include navigation.html %}
-    <div class="page_content">
-      {{ content }}
+    <div class="page_container">
+      <div class="page_content">
+        {{ content }}
+      </div>
+      {% if page.illustration %}
+        <div class="illustration">
+          <img src="{{ page.illustration }}" alt="Illustration">
+        </div>
+      {% endif %}
     </div>
     {% include footer.html %}
   </body>
