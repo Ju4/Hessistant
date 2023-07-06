@@ -13,8 +13,11 @@ h2 {
 li p {
   margin: 0;
 }
-.illustration {
-  max-width: 480px;
+a {
+  color: $base-color;
+}
+input[type='radio'] {
+  accent-color: $base-color;
 }
 .quote {
   font-style: italic;
