@@ -1,10 +1,28 @@
 <script>
-  function findJobs() {
+
+  function selectRadioButtons() {
+    {% for question in site.data.questions %}
+      var matches = /{{ question.id }}=([^&#=]*)/.exec(window.location.search);
+      if (matches && matches.length>1){
+        document.querySelector(`input[id="${matches[1]}"]`).checked = true;
+      }
+    {% endfor %}
+  }
+
+  function displayJobs() {
     var selectedAnswers = {};
+    var hasMatches = true;
 
     {% for question in site.data.questions %}
-      selectedAnswers["{{ question.id }}"] = document.querySelector('input[name="question-{{ question.id }}"]:checked').value;
+      var matches = /{{ question.id }}=([^&#=]*)/.exec(window.location.search);
+      if (matches && matches.length>1){
+        selectedAnswers["{{ question.id }}"] = matches[1];
+      } else {
+        hasMatches = false
+      }
     {% endfor %}
+
+	if (!hasMatches) {return;}
 
     var foundJobs = [];
 
@@ -29,5 +47,10 @@
 	} else {
       document.getElementById("foundJobs").innerHTML = "<p>Je n'ai rien trouvé pour le moment... sorry!</p>";
 	}
+	document.getElementById("foundJobs").scrollIntoView();
   }
+
+  selectRadioButtons();
+  displayJobs();
+
 </script>
