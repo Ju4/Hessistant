@@ -2,13 +2,13 @@
   text: Tu es plutôt team...
   answers:
     - id: type-1
-      text: Jeux vidéos
+      text: jeux vidéos 🎮
     - id: type-2
-      text: Sport
+      text: sport 🏀
 - id: job-interaction
-  text: Dans un groupe, tu es...
+  text: Dans un groupe, tu es la personne...
   answers:
     - id: interaction-1
-      text: la personne qu'on entend pas souvent
+      text: qu'on entend pas souvent 🤐
     - id: interaction-2
-      text: la personne qui parle tout le temps
+      text: qui parle tout le temps 🎙
