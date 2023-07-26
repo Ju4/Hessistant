@@ -2,7 +2,7 @@ title: L'Hessistant
 email: contact@ju4.fr
 description: >-
   Trouve un job au service de la communauté !
-baseurl: "/" # the subpath of your site, e.g. /blog
+baseurl: "/hessistant" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
