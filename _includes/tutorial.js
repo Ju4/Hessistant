@@ -33,7 +33,7 @@
       	containsLabels = selectedAnswers[question] !== "" && containsLabels && jobLabels.includes(selectedAnswers[question]);
       }
       if (containsLabels) {
-        foundJobs.push(["{{ job.title }}", "{{ job.url }}", "{{ job.one-liner }}"]);
+        foundJobs.push(["{{ job.title }}", "{{ job.url | relative_url }}", "{{ job.one-liner }}"]);
       }
     {% endfor %}
 
