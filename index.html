@@ -12,12 +12,21 @@ illustration: /assets/images/search.svg
 <form>
 {% for question in site.data.questions %}
   <div class="box">
-  <label class="box_label" for="question-{{ question.id }}">{{ question.text }}</label>
-  <div class="box_content">
-    {% for answer in question.answers %}
-      <input type="radio" id="{{ answer.id }}" name="{{ question.id }}" value="{{ answer.id }}" required>
-      <label for="{{ answer.id }}">{{ answer.text }}</label><br>
-    {% endfor %}
+    <label class="box_label" for="question-{{ question.id }}">{{ question.text }}</label>
+    <div class="box_content question_content">
+      <div class="answers">
+        {% for answer in question.answers %}
+        <div class="answer">
+          <input type="radio" id="{{ answer.id }}" name="{{ question.id }}" value="{{ answer.id }}" required>
+          <label for="{{ answer.id }}">{{ answer.text }}</label><br>
+        </div>
+        {% endfor %}
+      </div>
+      <div>
+        {% if question.illustration %}
+        <img class="question_illustration" src="{{ question.illustration }}" alt="Illustration">
+        {% endif %}
+      </div>
     </div>
   </div>
 {% endfor %}

@@ -1,5 +1,6 @@
 - id: job-type
   text: Tu es plutôt team...
+  illustration: /assets/images/sport.svg
   answers:
     - id: type-1
       text: jeux vidéos 🎮
@@ -7,6 +8,7 @@
       text: sport 🏀
 - id: job-interaction
   text: Dans un groupe, tu es la personne...
+  illustration: /assets/images/chat.svg
   answers:
     - id: interaction-1
       text: qu'on entend pas souvent 🤐

@@ -41,6 +41,22 @@ input[type='submit']:hover {
 .page_content, .illustration {
   padding: 16px;
 }
+.question_illustration {
+  width: 240px;
+  height: 240px;
+}
+.question_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.answers {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.answer {
+  padding: 8px;
+}
 .page_content {
   flex: 70%;
 }
@@ -89,6 +105,11 @@ input[type='submit']:hover {
 }
 .quote {
   font-style: italic;
+}
+@media (max-width: 960px) {
+  .question_content {
+    flex-direction: column;
+  }
 }
 @media (max-width: 640px) {
   .page_container {
