@@ -16,7 +16,7 @@
       </div>
       {% if page.illustration %}
         <div class="illustration">
-          <img src="{{ page.illustration }}" alt="Illustration">
+          <img src="{{ page.illustration | relative_url }}" alt="Illustration">
         </div>
       {% endif %}
     </div>

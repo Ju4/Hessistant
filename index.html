@@ -24,7 +24,7 @@ illustration: /assets/images/search.svg
       </div>
       <div>
         {% if question.illustration %}
-        <img class="question_illustration" src="{{ question.illustration }}" alt="Illustration">
+        <img class="question_illustration" src="{{ question.illustration | relative_url }}" alt="Illustration">
         {% endif %}
       </div>
     </div>
