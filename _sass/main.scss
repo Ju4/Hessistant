@@ -95,7 +95,7 @@ input[type='submit']:hover {
   flex: 1;
 }
 .job_item:hover {
-//   background-image: linear-gradient(rgb(0,0,0,5%) 0 0);
+  background-image: linear-gradient(rgba(0,0,0,5%) 0 0);
 }
 .job_label{
   background-color: $secondary-color;
