@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {% seo %}
-    <link rel="stylesheet" href="/assets/css/media-screen.css" media="screen">
-    <link rel="stylesheet" href="/assets/css/media-print.css" media="print">
-    <link rel="icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="stylesheet" href="{{ '/assets/css/media-screen.css' | relative_url }}" media="screen">
+    <link rel="stylesheet" href="{{ '/assets/css/media-print.css' | relative_url }}" media="print">
+    <link rel="icon" type="image/png" href="{{ '/assets/images/favicon.png' | relative_url }}">
   </head>
   <body>
     {% include navigation.html %}
